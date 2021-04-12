@@ -5281,7 +5281,6 @@ hr.thin {
   font-weight: bold;
 }
 .ads-details-wrapper .info-row {
-  border-top: solid 1px var(--border-color);
   margin-bottom: 15px;
   padding-top: 10px;
 }
@@ -5777,6 +5776,45 @@ h1.trtri span {
     margin-top: 5px;
     margin-bottom: 10px;
   }
+}
+
+.ads-buttons > button {
+  outline: none;
+  padding: 0.5rem 0;
+  background: transparent;
+  border-radius: 5px;
+  width: 200px;
+}
+.ads-buttons--promote-btn {
+  border: 2px solid #16A085;
+}
+.ads-buttons--promote-btn__price {
+  position: absolute;
+  top: -30%;
+  right: -10px;
+  background: #16A085;
+  border-radius: 5px;
+  color: white;
+  z-index: 9;
+  padding: 0 5px;
+}
+.ads-buttons--vip-btn {
+  background: orangered !important;
+  color: white;
+  border: none !important;
+}
+.ads-buttons--premium-btn {
+  border: 2px solid lightblue;
+}
+.ads-buttons--premium-btn__price {
+  position: absolute;
+  top: -30%;
+  right: -10px;
+  background: lightblue;
+  border-radius: 5px;
+  color: white;
+  z-index: 9;
+  padding: 0 5px;
 }
 
 .one-img {
@@ -6674,7 +6712,7 @@ td.ads-details-td {
 }
 .blogs-comment-buttons__helpful-btn {
   border: none;
-  outline: none;
+  outline: none !important;
   color: white;
   background: #16A085;
   border-radius: 5px;

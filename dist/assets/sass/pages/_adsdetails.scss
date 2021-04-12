@@ -80,7 +80,6 @@
     font-weight: bold;
   }
   .info-row {
-    border-top: $border;
     margin-bottom: 15px;
     padding-top: 10px;
   }
@@ -549,6 +548,50 @@ h1 {
     margin-bottom: 10px;
   }
 }
+
+.ads-buttons {
+  & > button {
+    outline: none;
+    padding: .5rem 0;
+    background: transparent;
+    border-radius: 5px;
+    width: 200px;
+  }
+  &--promote-btn {
+    border: 2px solid #16A085;
+
+    &__price {
+      position: absolute;
+      top: -30%;
+      right: -10px;
+      background: #16A085;
+      border-radius: 5px;
+      color: white;
+      z-index: 9;
+      padding: 0 5px;
+    }
+  }
+  &--vip-btn {
+    background: orangered !important;
+    color: white;
+    border: none !important;
+  }
+  &--premium-btn {
+    border: 2px solid lightblue;
+
+    &__price {
+      position: absolute;
+      top: -30%;
+      right: -10px;
+      background: lightblue;
+      border-radius: 5px;
+      color: white;
+      z-index: 9;
+      padding: 0 5px;
+    }
+  }
+}
+
 .one-img {
   margin-bottom: 25px;
 }

@@ -205,7 +205,7 @@
     }
     &__helpful-btn {
         border: none;
-        outline: none;
+        outline: none !important;
         color: white;
         background: #16A085;
         border-radius: 5px;
