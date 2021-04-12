@@ -115,8 +115,7 @@
         padding: 0;
     }
     > li {
-        border-bottom: $border;
-        margin: 0 0 25px;
+        margin: 0 0 20px;
         > ul {
             padding: 0 0 0 120px;
             li {
@@ -133,6 +132,7 @@
     display: table;
     margin: 0;
     width: 100%;
+    padding: 1rem 0;
 }
 .blogs-comment-avatar {
     display: table-cell;
@@ -149,29 +149,86 @@
 }
 .blogs-comment-details {
     display: table-cell;
-    padding: 0 0 0 30px;
     position: relative;
     vertical-align: top;
+    width: 50%;
 }
 .blogs-comment-description {
     margin-bottom: 20px;
 }
 .blogs-comment-name {
     color: #4a4a4a;
-    font-weight: 600;
-    margin: 0 0 15px;
+    font-size: 18px;
+
+    & > i {
+        color: #16A085;
+    }
+}
+.blogs-comment-rating {
+    color: #4a4a4a;
+    font-size: 18px;
+
+    & > i {
+        color: gold;
+    }
 }
 .blogs-comment-date {
-    color: #aaaaaa;
+    color: #aaa;
     font-size: 12px;
     font-weight: 400;
-    margin: 0 0 0 8px;
+}
+.blogs-comment-time {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 400;
+}
+.blogs-comment-place {
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 400;
+}
+.blogs-comment-description--text{
+    margin: 0;
+    font-size: 14px;
 }
 .blogs-comment-reply {
     position: absolute;
     right: 0;
     top: 0;
 }
+
+.blogs-comment-buttons {
+    & > button:not(:first-child) {
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+    &__helpful-btn {
+        border: none;
+        outline: none;
+        color: white;
+        background: #16A085;
+        border-radius: 5px;
+        padding: 5px 15px;
+    }
+}
+
+.replied-comment {
+    padding-left: 5rem;
+    &__details {
+        width: 40%;
+    }
+    &__comment-btn {
+        border: none;
+        outline: none;
+        background: #16a08488;
+        padding: 0;
+        border-radius: 5px;
+        padding: 5px 15px;
+        color: white;
+    }
+}
+
 @include breakpoint($sm-only) {
     .inner-box-content {
         .img-responsive {

@@ -456,8 +456,6 @@ h1 {
     #bx-pager {
       width: 70px;
     }
-    .thumb-item-link img {
-    }
   }
 }
 .ads-img-v2 #bx-pager {
@@ -533,11 +531,12 @@ h1 {
   }
 }
 .auto-price {
-  position: absolute;
-  right: 0;
-  top: 0;
   font-weight: 600;
-  color: #ff9113;
+  color: white;
+  text-align: center;
+  background: #16A085;
+  border-radius: 5px;
+  padding: .5rem 0;
   @include breakpoint($mobile) {
     position: relative;
     right: 0;

@@ -5758,11 +5758,12 @@ h1.trtri span {
 }
 
 .auto-price {
-  position: absolute;
-  right: 0;
-  top: 0;
   font-weight: 600;
-  color: #ff9113;
+  color: white;
+  text-align: center;
+  background: #16A085;
+  border-radius: 5px;
+  padding: 0.5rem 0;
 }
 @media (max-width: 767px) {
   .auto-price {
@@ -6577,8 +6578,7 @@ td.ads-details-td {
   padding: 0;
 }
 .blogs-comment-list > li {
-  border-bottom: solid 1px var(--border-color);
-  margin: 0 0 25px;
+  margin: 0 0 20px;
 }
 .blogs-comment-list > li > ul {
   padding: 0 0 0 120px;
@@ -6595,6 +6595,7 @@ td.ads-details-td {
   display: table;
   margin: 0;
   width: 100%;
+  padding: 1rem 0;
 }
 
 .blogs-comment-avatar {
@@ -6612,9 +6613,9 @@ td.ads-details-td {
 
 .blogs-comment-details {
   display: table-cell;
-  padding: 0 0 0 30px;
   position: relative;
   vertical-align: top;
+  width: 50%;
 }
 
 .blogs-comment-description {
@@ -6623,21 +6624,77 @@ td.ads-details-td {
 
 .blogs-comment-name {
   color: #4a4a4a;
-  font-weight: 600;
-  margin: 0 0 15px;
+  font-size: 18px;
+}
+.blogs-comment-name > i {
+  color: #16A085;
+}
+
+.blogs-comment-rating {
+  color: #4a4a4a;
+  font-size: 18px;
+}
+.blogs-comment-rating > i {
+  color: gold;
 }
 
 .blogs-comment-date {
-  color: #aaaaaa;
+  color: #aaa;
   font-size: 12px;
   font-weight: 400;
-  margin: 0 0 0 8px;
+}
+
+.blogs-comment-time {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.blogs-comment-place {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.blogs-comment-description--text {
+  margin: 0;
+  font-size: 14px;
 }
 
 .blogs-comment-reply {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.blogs-comment-buttons > button:not(:first-child) {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.blogs-comment-buttons__helpful-btn {
+  border: none;
+  outline: none;
+  color: white;
+  background: #16A085;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+.replied-comment {
+  padding-left: 5rem;
+}
+.replied-comment__details {
+  width: 40%;
+}
+.replied-comment__comment-btn {
+  border: none;
+  outline: none;
+  background: #16a08488;
+  padding: 0;
+  border-radius: 5px;
+  padding: 5px 15px;
+  color: white;
 }
 
 @media (max-width: 767px) {
