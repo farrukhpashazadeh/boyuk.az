@@ -1,0 +1,14 @@
+V05.01
+- bug fixed for the accordion of the categories does not work in the mobile view.
+
+ 
+V05.00
+
+# Added Dark Mode
+# Updated Bootstrap 4.3+
+# Updated Font awesome 5.2
+# Improved UI & Bug fixes
+# .. more
+
+# Please email me if you find out some new bugs or issues :)
+# gtanim@gmail.com
