@@ -13,7 +13,7 @@ $(function () {
         url: '*',
         responseTime: 2000,
         response: function (settings) {
-            var query = settings.data.query,
+            var query = settings?.data?.query || '',
                 queryLowerCase = query.toLowerCase(),
                 re = new RegExp('\\b' + $.Autocomplete.utils.escapeRegExChars(queryLowerCase), 'gi'),
                 suggestions = $.grep(usastatesArray, function (country) {

@@ -4,19 +4,19 @@ const navbarTopMenu = document.getElementById("navbar-top__menu");
 const navbarBottom = document.getElementById("navbar-bottom");
 const navbarToggler = document.getElementById("navbar-toggler");
 const navbarTopMenuList = document.getElementById("navbar-top__menu__list");
-const heartIcons = document.querySelectorAll('div.heart-icon > i');
+const heartIcons = document.querySelectorAll('div.products__body__product__like-btn > i');
 
 
 heartIcons.forEach(h => {
   h.addEventListener('click', e => {
     e.preventDefault();
-    if(h.classList.value === 'fas fa-heart') {
-      h.classList.value = 'far fa-heart'
-      h.style.color = 'white';
+    if(h.classList.value === 'far fa-heart') {
+      h.classList.value = 'fas fa-heart'
+      h.style.color = '#ff3d48';
   
     } else {
-      h.classList.value = 'fas fa-heart'
-      h.style.color = 'rgb(225, 25, 25)';
+      h.classList.value = 'far fa-heart'
+      h.style.color = 'white';
     }
     }
     )
@@ -53,4 +53,11 @@ navbarToggler.addEventListener('click', () => {
 navbarTopMenu.addEventListener('click', () => {
   navbarTopMenu.style.left = '-100%';
   navbarBottom.style.opacity = 1;
+})
+
+
+
+
+$('.carousel').carousel({
+  interval: false
 })

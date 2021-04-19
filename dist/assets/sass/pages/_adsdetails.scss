@@ -592,6 +592,42 @@ h1 {
   }
 }
 
+.store-gallery {
+  width: 100%;
+  
+  & > div > img {
+    transition: 0.7s;
+    transition-property: transform, border-radius;
+    width: 100%;
+  
+    &:hover {
+      transform: scale(1.2);
+      border: 5px solid white;
+      border-radius: 15px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    overflow: scroll;
+
+    & > .seller-gallery__img {
+      padding-bottom: 10px;
+      min-width: 30%;
+      height: min-content;
+
+      & > img:hover {
+          transform: none;
+      }
+    }
+  }
+}
+
+.store-rating__stars {
+  & > i {
+    color: gold;
+  }
+}
+
 .one-img {
   margin-bottom: 25px;
 }
