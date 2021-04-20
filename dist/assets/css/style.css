@@ -9517,6 +9517,30 @@ html[dir=rtl] body .demo-intro .intro-title, .demo-intro html[dir=rtl] body .int
           animation-name: bg-2;
 }
 
+.stores-section__store {
+  background: #fff;
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+.stores-section__store__img {
+  width: 35%;
+}
+.stores-section__store__info {
+  width: 70%;
+  color: black;
+}
+.stores-section__store__info__heading {
+  font-weight: bold;
+  font-size: 18px;
+}
+.stores-section__store__see-more {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 5px 15px;
+  color: #ff3d48;
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }

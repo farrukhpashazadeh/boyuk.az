@@ -1,0 +1,32 @@
+.stores-section {
+    &__store {
+        background: #fff;
+        border-radius: 7px;
+        margin-bottom: 15px;
+        &__img {
+            width: 35%;
+        }
+
+        &__info {
+            width: 70%;
+            color: black;
+            &__heading {
+                font-weight: bold;
+                font-size: 18px;
+            }
+            
+            // &__contact {
+            //     font-weight: bold;
+            //     font-size: 18px;
+            // }
+        }
+
+        &__see-more {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 5px 15px;
+            color: #ff3d48;
+        }
+    }
+}
