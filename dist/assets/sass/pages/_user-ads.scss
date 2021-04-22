@@ -1,0 +1,86 @@
+.user-ads {
+    &__ad-window {
+        &__main-img {
+            width: 50%;
+        }
+
+        // &__extra-img__holder {
+        //     width: 50%;
+        //     & img {
+        //         margin: 5px;
+        //     }
+        // }
+    }
+}
+
+.user-ads-details {
+    &__price {
+        width: 20%;
+        color: orangered;
+        font-size: 25px;
+        font-weight: bold;
+        height: max-content;
+        background-color: rgb(211, 209, 209);
+    }
+
+    &__detail {
+        width: 75%;
+
+        &__desc {
+            font-size: 30px;
+            color: gray;
+        }
+       
+        &__buttons {
+            & > button {
+                border: 2px solid orangered !important;
+                outline: none;
+                display: inline-block;
+                width: 20%;
+                background: transparent;
+                padding: 5px 0;
+                border-radius: 4px;
+            }
+        }
+    }
+}
+
+.user-and-ads-section {
+    &__left {
+        width: 70%;
+        
+        &__detail {
+            background: rgb(228, 228, 228);
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    }
+    &__right {
+        width: 25%;
+        .user-ads__user-info {
+            background-color: #e4e4e4;
+            &__img {
+                width: 30%;
+                border-radius: 100%;
+                display: block;
+                margin: 10px auto;
+            }
+
+            &__buttons {
+                width: 80%;
+                & > button {
+                    border: 1px solid gray;
+                    border-radius: 50%;
+                    outline: none;
+                    background: transparent;  
+                    color: gray;  
+                }
+            }
+
+            &__phone {
+                width: 80%;
+            }
+        }
+    }
+
+}

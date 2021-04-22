@@ -8840,6 +8840,69 @@ html[dir=rtl] body .demo-intro .intro-title, .demo-intro html[dir=rtl] body .int
   color: #ff3d48;
 }
 
+.user-ads__ad-window__main-img {
+  width: 50%;
+}
+
+.user-ads-details__price {
+  width: 20%;
+  color: orangered;
+  font-size: 25px;
+  font-weight: bold;
+  height: max-content;
+  background-color: #d3d1d1;
+}
+.user-ads-details__detail {
+  width: 75%;
+}
+.user-ads-details__detail__desc {
+  font-size: 30px;
+  color: gray;
+}
+.user-ads-details__detail__buttons > button {
+  border: 2px solid orangered !important;
+  outline: none;
+  display: inline-block;
+  width: 20%;
+  background: transparent;
+  padding: 5px 0;
+  border-radius: 4px;
+}
+
+.user-and-ads-section__left {
+  width: 70%;
+}
+.user-and-ads-section__left__detail {
+  background: #e4e4e4;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.user-and-ads-section__right {
+  width: 25%;
+}
+.user-and-ads-section__right .user-ads__user-info {
+  background-color: #e4e4e4;
+}
+.user-and-ads-section__right .user-ads__user-info__img {
+  width: 30%;
+  border-radius: 100%;
+  display: block;
+  margin: 10px auto;
+}
+.user-and-ads-section__right .user-ads__user-info__buttons {
+  width: 80%;
+}
+.user-and-ads-section__right .user-ads__user-info__buttons > button {
+  border: 1px solid gray;
+  border-radius: 50%;
+  outline: none;
+  background: transparent;
+  color: gray;
+}
+.user-and-ads-section__right .user-ads__user-info__phone {
+  width: 80%;
+}
+
 .align-baseline {
   vertical-align: baseline !important;
 }
